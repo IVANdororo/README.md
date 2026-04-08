@@ -3,7 +3,6 @@ from calculator import calc_total
 from logger import log_start, log_input, log_result, log_error
 from receipt import print_receipt
 
-
 def main():
     try:
         log_start()
@@ -19,7 +18,6 @@ def main():
     except Exception as e:
         log_error(str(e))
         print(f"Ошибка: {e}")
-
 
 if __name__ == "__main__":
     main()
