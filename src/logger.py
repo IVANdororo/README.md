@@ -9,12 +9,10 @@ def write_log(message):
     with open("logs/log.txt", "a", encoding="utf-8") as file:
         file.write(f"{now} - {message}\n")
 
-
 def log_start():
     """Логируем запуск"""
     write_log("Программа запущена")
     print("Логирование включено")
-
 
 def log_input(data):
     """Логируем ввод пользователя"""
@@ -25,12 +23,10 @@ def log_input(data):
     write_log(f"Услуги: {data['services']} руб")
     write_log(f"Промокод: {data['promocode']}")
 
-
 def log_result(result):
     """Логируем результат"""
     write_log(f"Итоговая сумма: {result['total']} руб")
     write_log("=" * 30)
-
 
 def log_error(error):
     """Логируем ошибку"""
