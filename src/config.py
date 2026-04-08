@@ -1,5 +1,5 @@
 # Базовые цены на работы (руб.)
-LABOR_PRICES = {
+PRICES = {
     "iPhone": {
         "screen": 2500,
         "battery": 1200,
@@ -43,14 +43,14 @@ LABOR_PRICES = {
 }
 
 # Коэффициенты срочности
-URGENCY_RATES = {
+URGENCY = {
     "normal": 1.0,
     "urgent": 1.3,
     "emergency": 1.5
 }
 
 # Дополнительные услуги
-ADDITIONAL_SERVICES_PRICES = {
+SERVICES = {
     "home_visit": 500,
     "protective_glass": 300
 }
