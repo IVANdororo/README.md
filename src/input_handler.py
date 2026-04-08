@@ -4,9 +4,10 @@ def get_model():
     print("1. iPhone")
     print("2. Samsung")
     print("3. Xiaomi")
-    print("4. Другое")
+    print("4. Google Pixel")
+    print("5. Другое")
     
-    choice = input("Введите номер (1-4): ")
+    choice = input("Введите номер (1-5): ")
     
     if choice == "1":
         return "iPhone"
@@ -14,6 +15,8 @@ def get_model():
         return "Samsung"
     elif choice == "3":
         return "Xiaomi"
+    elif choice == "4":
+        return "Google Pixel"
     else:
         return "Other"
 
@@ -95,5 +98,3 @@ def get_all_data():
         "promocode": get_promocode()
     }
     return data
-None
-
